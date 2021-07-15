@@ -13,10 +13,7 @@ export default function orderByProps(obj, sortingOrder) {
     if (a.key > b.key) {
       return 1;
     }
-    if (a.key < b.key) {
-      return -1;
-    }
-    return 0;
+    return -1;
   });
 
   return newArr1.concat(newArr2);
